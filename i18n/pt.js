@@ -1,0 +1,58 @@
+// 🇧🇷 Português
+(window.I18N = window.I18N || {}).pt = {
+ ui:{
+  "tagline": "Bem-estar • Nutrição • Qualidade de vida",
+  "h1a": "Quanto você se importa com",
+  "h1b": "sua saúde / nutrição?",
+  "sub": "Pequenas mudanças, grandes resultados no seu dia a dia",
+  "pil1": "Fortalece suas defesas",
+  "pil2": "Mais energia",
+  "pil3": "Apoio mental",
+  "pil4": "Equilíbrio natural",
+  "cat": {
+   "todos": "Todos",
+   "cafe": "Linha de café",
+   "bebidas": "Linha de bebidas",
+   "suplementos": "Linha de suplementos",
+   "belleza": "Linha de beleza"
+  },
+  "beneficios": "Benefícios",
+  "ideal": "Ideal para pessoas que",
+  "precio": "preço sugerido",
+  "foto": "Foto em breve",
+  "wa": "Perguntar pelo WhatsApp",
+  "wamsg": "Olá, tenho interesse em",
+  "futuro": "O futuro da sua saúde",
+  "legal": "Informações criadas por distribuidores independentes; não representa oficialmente a Gano Excel S.A.",
+  "u": {
+   "sobres": "sachês",
+   "pods": "pods",
+   "caps": "cápsulas",
+   "sach": "sachês"
+  },
+  "mas": "Mais informações",
+  "cerrar": "Fechar",
+  "detalles": "Detalhes"
+ },
+ p:{
+  "classic":{"d":"Café instantâneo com Ganoderma","b":["Energia sem superestimular","Melhora a circulação","Não quebra o jejum"],"i":["Gostam de café puro","Praticam atividade física","Acham o café tradicional pesado"],"m":"Café preto de sabor robusto, com menos cafeína e enriquecido com extrato solúvel de Ganoderma Lucidum. Uma combinação rica em antioxidantes.","f":["30 sachês de 3 g · 210 ml por porção","Sem açúcar e sem glúten","Compatível com jejum"]},
+  "3en1":{"d":"Café, creme não lácteo e açúcar orgânico","b":["Energia sem superestimular","Diurético natural","Alternativa mais saudável tipo cappuccino"],"i":["Gostam de café com leite","Estão reduzindo o açúcar aos poucos","Cuidam da saúde"],"m":"Mistura de grãos de café selecionados e extrato de Ganoderma Lucidum (com menos cafeína), com creme não lácteo e um sabor especial tipo cappuccino.","f":["20 sachês de 21 g · 210 ml por porção","Com açúcar orgânico","Contém lácteos em quantidades mínimas"]},
+  "latte":{"d":"Café e creme não lácteo, sem açúcar","b":["Rico em antioxidantes","Apoia as defesas do corpo","Sem açúcar"],"i":["Gostam do sabor de café","Tomam uma bebida quente no café da manhã ou lanche","Não consomem açúcar"],"m":"Café tipo latte com creme não lácteo e extrato de Ganoderma Lucidum, com menos cafeína, de sabor suave e cremoso.","f":["20 sachês de 15 g · 210 ml por porção","Sem adoçante adicionado","Contém leite, cevada e trigo; pode conter soja"]},
+  "mocha":{"d":"Café, chocolate e creme não lácteo, sem açúcar","b":["Rico em antioxidantes","Apoia as defesas do corpo","Sem açúcar"],"i":["Adoram café e chocolate","Preferem a versão saudável","Não consomem açúcar"],"m":"Uma bebida deluxe para os amantes de café: café e chocolate com extrato de Ganoderma, suave e cremosa. Pode ser tomada quente ou gelada.","f":["20 sachês de 18 g · 240 ml por porção","Sem adoçante adicionado","Contém leite, cevada e glúten; pode conter soja e trigo"]},
+  "luvoco":{"d":"Café moído em pods: suave, médio ou forte (máquina vendida à parte)","b":["Único café moído com Ganoderma","Três torras para escolher","Premium e saudável"],"i":["Não gostam de café instantâneo","Adoram café coado"],"m":"Café moído e torrado de alta qualidade, enriquecido com betaglucanos de Ganoderma lucidum. Torra suave (leve, para começar o dia), média (equilibrada) ou forte (intensa e defumada).","f":["15 pods de 8 g","Compatível com a máquina Luvoco: espresso, duplo espresso e lungo","A máquina (15 bar, pronta em 30 segundos) é vendida à parte"]},
+  "shockolade":{"d":"Chocolate suíço com açúcar orgânico","b":["Única bebida com Excellium","Apoia as defesas do corpo","Ajuda na concentração"],"i":["Querem substituir achocolatados","Querem suplementar a alimentação dos filhos","Adoram chocolate"],"m":"Chocolate estilo suíço com extrato de Ganoderma Lucidum, cacau, creme não lácteo e adoçante natural. Fornece vitaminas E, B1 e B2 e minerais como ferro, cálcio, zinco e magnésio.","f":["20 sachês de 30 g · 240 ml por porção","Com açúcar","Contém lácteos"]},
+  "shokorico":{"d":"Chocolate suíço sem açúcar","b":["Chocolate com Ganoderma","Apoia as defesas e a eliminação de toxinas","Sem açúcar"],"i":["Querem substituir achocolatados","Adoram chocolate e não consomem açúcar"],"m":"Chocolate estilo suíço em pó com cacau de alta qualidade, creme não lácteo e betaglucanos de Ganoderma Lucidum. Com fibra alimentar.","f":["20 sachês de 23 g · 240 ml por porção","Sem açúcar adicionado"]},
+  "rooibos":{"d":"Infusão de rooibos com Ganoderma","b":["Ajuda na digestão","Diurético natural","Ajuda a relaxar e dormir"],"i":["Têm dificuldade para dormir","Não podem ou não querem cafeína"],"m":"Infusão de rooibos, uma erva africana, com extrato de Ganoderma Lucidum. Uma mistura ideal para relaxar e se recuperar.","f":["20 sachês · 210 ml por porção","Sem cafeína e sem teína","Sem açúcar"]},
+  "creal":{"d":"Aveia, espirulina e açúcar orgânico","b":["Fonte de proteína vegetal","Muito completo em nutrientes","Serve como pós-treino"],"i":["Querem ganhar massa muscular","Procuram um lanche saudável para os filhos","Têm pouco tempo para comer de forma equilibrada"],"m":"Mistura de superalimentos com aveia integral, espirulina e extrato solúvel de Ganoderma Lucidum. Fornece proteína, fibra, ferro e vitaminas do complexo B.","f":["15 sachês de 30 g","Ideal para o café da manhã e o pós-treino","Com açúcar orgânico"]},
+  "ganoderma":{"d":"Extrato concentrado 275 mg","b":["Fortalece o sistema imunológico","Ajuda a eliminar toxinas","Complementa uma boa alimentação"],"i":["Sentem que adoecem com frequência","Querem cuidar da saúde a longo prazo"],"m":"Extrato natural, 100% solúvel em água, álcool e óleo, das 6 variedades mais potentes do cogumelo Ganoderma Lucidum.","f":["90 cápsulas de 275 mg"]},
+  "excellium":{"d":"Extrato de micélio 425 mg","b":["Tônico cerebral","Melhora a circulação","Apoia o sistema cardiovascular"],"i":["Querem descansar melhor","Querem cuidar de cérebro, coração e circulação"],"m":"Suplemento feito do micélio do Ganoderma Lucidum, extraído do cogumelo jovem. Conhecido como «tônico cerebral».","f":["90 cápsulas de 425 mg"]},
+  "cordygold":{"d":"Cordyceps sinensis 500 mg","b":["Pré-treino 100% natural","Oxigena o sangue","Apoia o equilíbrio hormonal"],"i":["Treinam e querem mais desempenho","Querem mais energia física"],"m":"Suplemento de Cordyceps sinensis, cogumelo muito valorizado na medicina tradicional chinesa e conhecido como o «ouro do Himalaia».","f":["60 cápsulas de 500 mg"]},
+  "reskine":{"d":"Colágeno marinho com antioxidantes e Ganoderma","b":["100% marinho, sem bovino nem suíno","Com acerola, frutas vermelhas e goji","Não precisa diluir"],"i":["Têm mais de 30 anos","Querem cuidar da pele, dos tecidos e dos ossos"],"m":"Bebida de colágeno marinho com Ganoderma Lucidum, quinoa líquida, goji, maçã, aloe vera, espinafre, mirtilo e acerola. Com notas de morango e framboesa.","f":["10 sachês de 25 ml","Colágeno 100% marinho"]},
+  "fresh":{"d":"Creme dental sem flúor","b":["Sem flúor, para crianças e adultos","Ajuda a regular o pH bucal","Protege o esmalte"],"i":["Têm sensibilidade dental","Tomam café e cuidam do esmalte"],"m":"Creme dental natural sem flúor, enriquecido com Ganoderma Lucidum, com refrescante sabor de menta. Não abrasivo.","f":["Tubo de 150 g","Sem flúor"]},
+  "soap":{"d":"Sabonete facial com aloe vera, mamão e Ganoderma","b":["Clareia, nutre e desintoxica","Cheiro neutro","Uso dermatológico"],"i":["Querem um tom de pele mais uniforme","Têm pele com acne"],"m":"Sabonete enriquecido com extrato de Ganoderma Lucidum, aloe vera e mamão. Livre de químicos e de gorduras animais; adequado para todos os tipos de pele.","f":["Barra de 100 g","Com vitamina E"]},
+  "soapcabra":{"n":"GanoSoap Leite de Cabra","d":"Sabonete corporal com leite de cabra e Ganoderma","b":["Hidrata e limpa a pele","Cheiro neutro","Uso dermatológico"],"i":["Cuidam da pele","Procuram um sabonete para crianças e adultos"],"m":"Sabonete de banho com Ganoderma Lucidum, leite de cabra e vitamina E. Limpa, hidrata e revitaliza a pele; para uso diário e toda a família.","f":["2 sabonetes de 100 g cada","Para toda a família"]},
+  "exfoliante":{"n":"Esfoliante corporal","d":"Piel&Brillo · esfoliante para o corpo","b":["Remove células mortas","Nutre e clareia a pele"],"i":["Vão se bronzear","Têm pele seca"],"m":"Esfoliante para o banho com extrato de Ganoderma Lucidum. Limpa mais a fundo que um esfoliante tradicional e deixa a pele macia e luminosa.","f":["300 ml"]},
+  "shampoo":{"n":"Shampoo Piel&Brillo","d":"Com micropartículas de Ganoderma · 300 ml","b":["Brilho, sedosidade e volume","Hidrata o couro cabeludo","Reduz a caspa e a coceira"],"i":["Têm cabelo tingido ou alisado","Querem mais volume e sedosidade"],"m":"Shampoo com micropartículas de Ganoderma Lucidum e aloe vera, que fornecem nutrientes e antioxidantes para um cabelo hidratado, brilhante e macio.","f":["300 ml","Sem sulfatos, sem parabenos e sem sal"]},
+  "acondicionador":{"n":"Condicionador Piel&Brillo","d":"Com micropartículas de Ganoderma · 300 ml","b":["Suaviza e hidrata o cabelo","Ajuda com as pontas duplas","Dá brilho e sedosidade"],"i":["Têm cabelo tingido ou alisado","Têm cabelo seco ou com pontas duplas"],"m":"Condicionador com micropartículas de Ganoderma Lucidum, complemento do shampoo para um cabelo macio, hidratado e brilhante.","f":["300 ml","Sem sulfatos, sem parabenos e sem sal","Também disponível em combo com o shampoo"]}
+ }
+};

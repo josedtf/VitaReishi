@@ -1,0 +1,69 @@
+/* Colores tomados del afiche: durazno/crema, chocolate, bronce y verde hoja */
+:root{
+  --crema:#f6e8da; --arena:#ebd3bc; --piedra:#d9c0a4;
+  --chocolate:#3a1d10; --bronce:#9a6b3a; --hoja:#5b7338;
+  --tarjeta:#fffaf4; --linea:#e3cdb6; --suave:#7a6455;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0}
+body{font-family:Montserrat,system-ui,sans-serif;color:var(--chocolate);line-height:1.5;
+  background:linear-gradient(180deg,var(--crema) 0,var(--arena) 100%) fixed}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.top{display:flex;justify-content:space-between;align-items:center;padding-top:20px;gap:12px}
+.brand{font-size:.8rem;font-weight:500;letter-spacing:.35em}
+.tagline{font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;color:var(--suave);margin-top:2px}
+.lang{display:flex;gap:4px}
+.lang button{font:inherit;font-size:.75rem;font-weight:500;border:1px solid var(--linea);background:transparent;color:var(--chocolate);padding:5px 10px;border-radius:99px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--chocolate);border-color:var(--chocolate);color:var(--crema)}
+.hero{padding:56px 0 36px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end}
+h1{font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:clamp(2.2rem,6.5vw,4.4rem);line-height:1.05;letter-spacing:-.01em}
+h1 em{display:block;font-weight:500;color:var(--bronce)}
+.sub{border-left:1px solid var(--bronce);padding-left:16px;max-width:200px;font-family:"Playfair Display",Georgia,serif;font-size:1.05rem;color:var(--suave)}
+.pilares{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);padding:16px 0;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;text-align:center;color:var(--bronce)}
+nav{position:sticky;top:0;z-index:5;background:var(--crema);border-bottom:1px solid var(--linea);padding:12px 0;margin-top:28px}
+nav .wrap{display:flex;gap:8px;overflow-x:auto}
+nav button{font:inherit;font-size:.78rem;letter-spacing:.08em;white-space:nowrap;border:1px solid var(--bronce);background:transparent;color:var(--chocolate);padding:8px 16px;border-radius:99px;cursor:pointer}
+nav button[aria-pressed=true]{background:var(--chocolate);border-color:var(--chocolate);color:var(--crema)}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px;padding:28px 0 56px}
+.card{background:var(--tarjeta);border:1px solid var(--linea);border-radius:14px;display:flex;flex-direction:column}
+.foto{position:relative;aspect-ratio:1/1;background:var(--piedra);display:grid;place-items:center;padding:20px;text-align:center;color:var(--chocolate);font-size:.85rem}
+.foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.info{padding:20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.info h2{font-family:"Playfair Display",Georgia,serif;font-size:1.35rem;line-height:1.2}
+.desc{font-size:.8rem;color:var(--suave)}
+.precio{font-weight:700;color:var(--bronce)}
+h3{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px;color:var(--hoja)}
+ul{padding-left:18px;font-size:.88rem}
+li::marker{color:var(--bronce)}
+.ideal{background:var(--crema);border-radius:10px;padding:12px 14px}
+.btn{margin-top:auto;display:block;text-align:center;text-decoration:none;font-weight:700;font-size:.9rem;background:var(--hoja);color:#fff;padding:12px;border-radius:10px}
+.btn:hover{background:#465a2a}
+button:focus-visible,a:focus-visible{outline:3px solid var(--bronce);outline-offset:2px}
+footer{background:var(--chocolate);color:#e3cdb6;padding:32px 0;font-size:.78rem;text-align:center}
+footer strong{display:block;font-family:"Playfair Display",Georgia,serif;font-size:1.2rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px;color:var(--crema)}
+@media(max-width:640px){.hero{grid-template-columns:1fr}.sub{max-width:none}}
+
+/* ---- Hover en fotos, botón "más información" y ventana de detalle ---- */
+button.foto{border:0;width:100%;cursor:pointer;font:inherit;color:inherit}
+.foto img,.foto span{transition:transform .4s ease}
+.foto{border-radius:14px 14px 0 0}
+.foto img{border-radius:inherit;transition:transform .4s ease,box-shadow .4s ease,border-radius .4s ease}
+/* Hover solo en las tarjetas de la pantalla principal (button.foto), no en la ventana de detalle */
+button.foto:hover{z-index:2}
+button.foto:hover img{transform:scale(1.07);border-radius:14px;box-shadow:0 14px 30px rgba(58,29,16,.35)}
+button.foto:hover span{transform:scale(1.07)}
+.foto.grande,.foto.grande img{border-radius:0}
+.acciones{margin-top:auto;display:grid;gap:8px}
+.btn{margin-top:0}
+.mas{font:inherit;font-size:.8rem;font-weight:500;background:transparent;border:1px solid var(--bronce);color:var(--chocolate);padding:8px;border-radius:10px;cursor:pointer}
+.mas:hover{background:var(--crema)}
+dialog{margin:auto;border:0;padding:0;border-radius:16px;width:min(920px,94vw);max-height:92vh;overflow:auto;background:var(--tarjeta);color:var(--chocolate)}
+dialog::backdrop{background:rgba(58,29,16,.6)}
+body:has(dialog[open]){overflow:hidden}
+.cerrar{position:absolute;top:10px;right:12px;z-index:2;width:36px;height:36px;border-radius:50%;border:0;background:var(--tarjeta);color:var(--chocolate);font-size:1.4rem;line-height:1;cursor:pointer}
+.mgrid{display:grid;grid-template-columns:1fr 1fr}
+.foto.grande{aspect-ratio:auto;min-height:340px}
+.minfo{padding:30px 28px;display:flex;flex-direction:column;gap:14px}
+.largo{font-size:.92rem}
+@media(max-width:700px){.mgrid{grid-template-columns:1fr}.foto.grande{aspect-ratio:1/1;min-height:0}}
+@media(prefers-reduced-motion:reduce){.foto img,.foto span{transition:none}}

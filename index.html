@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VitaReishi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="wrap">
+  <div class="top">
+    <div><div class="brand">VitaReishi</div><div class="tagline" data-i18n="tagline"></div></div>
+    <div class="lang" id="lang"></div>
+  </div>
+  <div class="hero">
+    <h1><span data-i18n="h1a"></span><em data-i18n="h1b"></em></h1>
+    <p class="sub" data-i18n="sub"></p>
+  </div>
+  <div class="pilares"><span data-i18n="pil1"></span><span data-i18n="pil2"></span><span data-i18n="pil3"></span><span data-i18n="pil4"></span></div>
+</header>
+<nav aria-label="Categorías"><div class="wrap" id="filtros"></div></nav>
+<main class="wrap"><div id="grid"></div></main>
+<footer><div class="wrap"><strong data-i18n="futuro"></strong><span data-i18n="legal"></span></div></footer>
+<dialog id="modal" aria-label="Detalle del producto"></dialog>
+<script src="i18n/es.js"></script>
+<script src="i18n/en.js"></script>
+<script src="i18n/pt.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
