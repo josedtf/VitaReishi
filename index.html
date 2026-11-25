@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VitaReishi</title>
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 <body>
 <header class="wrap">
   <div class="top">
-    <div><div class="brand">VitaReishi</div><div class="tagline" data-i18n="tagline"></div></div>
+    <div><div class="brand"><img class="logo" src="images/logo.png" alt="VitaReishi" onerror="this.replaceWith(document.createTextNode('VITAREISHI'))"></div><div class="tagline" data-i18n="tagline"></div></div>
     <div class="lang" id="lang"></div>
   </div>
   <div class="hero">
@@ -21,6 +22,29 @@
   </div>
   <div class="pilares"><span data-i18n="pil1"></span><span data-i18n="pil2"></span><span data-i18n="pil3"></span><span data-i18n="pil4"></span></div>
 </header>
+<section class="ganoderma wrap" id="ganoderma">
+  <div class="g-info">
+    <h2 data-i18n="gTitulo"></h2>
+    <p data-i18n="gTexto"></p>
+    <h3 data-i18n="gBenTitulo"></h3>
+    <ul><li data-i18n="gb1"></li><li data-i18n="gb2"></li><li data-i18n="gb3"></li><li data-i18n="gb4"></li><li data-i18n="gb5"></li><li data-i18n="gb6"></li></ul>
+    <p class="nota" data-i18n="gNota"></p>
+  </div>
+  <div class="g-video">
+    <span data-i18n="gVideo"></span>
+    <!-- 🎬 Guarda tu video como videos/ganoderma.mp4 -->
+    <video controls playsinline preload="metadata"><source src="videos/ganoderma.mp4" type="video/mp4" onerror="this.closest('video').remove()"></video>
+  </div>
+</section>
+<section class="porque wrap">
+  <h2 data-i18n="wTitulo"></h2>
+  <div class="porque-grid">
+    <article><h3 data-i18n="w1t"></h3><p data-i18n="w1d"></p></article>
+    <article><h3 data-i18n="w2t"></h3><p data-i18n="w2d"></p></article>
+    <article><h3 data-i18n="w3t"></h3><p data-i18n="w3d"></p></article>
+    <article><h3 data-i18n="w4t"></h3><p data-i18n="w4d"></p></article>
+  </div>
+</section>
 <nav aria-label="Categorías"><div class="wrap" id="filtros"></div></nav>
 <main class="wrap"><div id="grid"></div></main>
 <footer><div class="wrap"><strong data-i18n="futuro"></strong><span data-i18n="legal"></span></div></footer>
